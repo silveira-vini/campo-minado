@@ -50,6 +50,10 @@ public class Campo {
 		return aberto;
 	}
 	
+	void setAberto(boolean aberto) {
+		this.aberto = aberto;
+	}
+
 	public boolean isFechado() {
 		return !isAberto();
 	}
@@ -58,6 +62,14 @@ public class Campo {
 		minado = true;
 	}
 	
+
+	public boolean isMinado() {
+		return minado;
+	}
+
+	public void setMinado(boolean minado) {
+		this.minado = minado;
+	}
 
 	void alternarMarcacao() {
 		if (!aberto) {
@@ -131,5 +143,5 @@ public class Campo {
 		}
 		
 	}
-	
+
 }
